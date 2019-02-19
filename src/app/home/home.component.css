@@ -1,0 +1,28 @@
+.container{
+    height: 800px;
+    color: black;
+    margin-left: 200px;
+}
+
+html,body{
+    height: 1000px;
+}
+
+.text-white{
+    color: white;
+}
+
+.text-offwhite{
+    color: rgb(223, 223, 223);
+}
+
+.text-black{
+    color: black;
+}
+
+.card{
+    border-radius: 5px;
+}
+.card_body_back{
+    background-color: black;
+}

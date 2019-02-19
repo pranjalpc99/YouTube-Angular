@@ -1,0 +1,33 @@
+.container{
+    height: 100%;
+    color: black;
+    margin-left: 200px;
+}
+
+html,body{
+    height: 100%;
+    background-color: black;
+}
+
+.text-white{
+    color: white;
+    margin-left: 30px;
+}
+
+.text-black{
+    color: black;
+}
+
+.card_body_back{
+    background-color: white;
+    border-radius:100px; 
+}
+
+.trending_gif{
+    height: 150px;
+    width: 200px;
+}
+
+.table_back{
+    background-color: black;
+}
