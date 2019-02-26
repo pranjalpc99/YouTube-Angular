@@ -2,10 +2,12 @@
     height: 800px;
     color: black;
     margin-left: 200px;
+    padding-top: 50px;
 }
 
 html,body{
     height: 1000px;
+    margin-top: 50px;
 }
 
 .text-white{
