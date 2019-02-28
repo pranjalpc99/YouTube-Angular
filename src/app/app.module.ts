@@ -19,6 +19,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { environment } from '../environments/environment';
+import { ShowVideoComponent } from './show-video/show-video.component';
 
 
 
@@ -32,7 +33,8 @@ import { environment } from '../environments/environment';
     HomeComponent,
     HistoryComponent,
     SettingsComponent,
-    YoutubeplayerComponent
+    YoutubeplayerComponent,
+    ShowVideoComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +53,7 @@ import { environment } from '../environments/environment';
       {path:"subscriptions",component:SubscriptionsComponent},
       {path:"history",component:HistoryComponent},
       {path:"settings",component:SettingsComponent},
-      {path:'',redirectTo:'home',pathMatch:'full'}
+      {path:"showVideo/:data",component:ShowVideoComponent}
     ])
   ],
   providers: [],

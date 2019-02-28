@@ -12,6 +12,10 @@ import {
   ViewEncapsulation
 } from '@angular/core';
 
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Search } from '../search';
+import {Router} from '@angular/router';
+
 @Component({
   selector: 'app-main-nav',
   templateUrl: './main-nav.component.html',
@@ -31,10 +35,16 @@ export class MainNavComponent {
     @Output() signIn = new EventEmitter();
     @Output() signOut = new EventEmitter();
     @Output() headerMainIconClick = new EventEmitter();
-  constructor(private breakpointObserver: BreakpointObserver) {}
 
-  onSearch(){
-    
+    classSearch = Search;
+
+  searchData: Search;
+  constructor(private breakpointObserver: BreakpointObserver,private router:Router) {}
+
+  onSearch(search_string:Search):void{
+    this.searchData=search_string;
+    console.log(this.searchData);
+    this.router.navigate(['showVideo',this.searchData]);
   }
 
   signInUser() {

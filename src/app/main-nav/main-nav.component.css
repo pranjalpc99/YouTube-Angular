@@ -7,7 +7,7 @@ html,body{
 }
 
 .sidenav {
-  width: 200px;
+  width: 220px;
 }
 
 .sidenav .mat-toolbar {
@@ -75,8 +75,17 @@ html,body{
   margin-right: 20px;
   color:white;
 }
+.sidenav a.active {
+  background-color: #333333;
+  color: white;
+}
 
-.navbar_sideicon{
+.sidenav a:hover:not(.active) {
+  background-color: #333333;
+  color: white;
+}
+
+.side_icon a.active{
   margin-right: 20px;
-  color:white;
+  color:red;
 }
